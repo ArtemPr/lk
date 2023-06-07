@@ -9,3 +9,16 @@
 {% block javascripts %}
     {{ encore_entry_script_tags('main') }}
 {% endblock %}
+
+{% block body %}
+    <div class="page">
+        {% include('block/aside.html.twig') %}
+        <div class="page-wrapper">
+            {% include 'block/header.html.twig'
+                with {
+                    header: 'Добро пожаловать',
+                }
+            %}
+        </div>
+    </div>
+{% endblock %}

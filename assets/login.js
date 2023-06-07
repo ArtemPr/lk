@@ -4,4 +4,3 @@ registerReactControllerComponents(require.context('./react/controllers', true, /
 import './source/css/tabler.css';
 
 import './source/js/tabler'
-import './source/js/demo-theme'

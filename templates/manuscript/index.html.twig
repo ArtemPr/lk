@@ -9,3 +9,16 @@
 {% block javascripts %}
     {{ encore_entry_script_tags('manuscript') }}
 {% endblock %}
+
+{% block body %}
+    <div class="page">
+        {% include('block/aside.html.twig') %}
+        <div class="page-wrapper">
+            {% include 'block/header.html.twig'
+                with {
+                header: 'Рукопись',
+            }
+            %}
+        </div>
+    </div>
+{% endblock %}
