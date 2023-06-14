@@ -1,6 +1,6 @@
 {% extends 'base.html.twig' %}
 
-{% block title %}Document{% endblock %}
+{% block title %}Документы{% endblock %}
 
 {% block stylesheets %}
     {{ encore_entry_link_tags('documents') }}
@@ -19,6 +19,15 @@
                 header: 'Документы',
             }
             %}
+            <div class="vh-100">
+
+                <div class="top-bl">
+                    {{ include('documents/elements/table.html.twig') }}
+                </div>
+                <div class="bottom-bl">
+                    {{ include('documents/elements/table.html.twig') }}
+                </div>
+            </div>
         </div>
     </div>
 {% endblock %}

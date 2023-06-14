@@ -3,11 +3,11 @@
 {% block title %}Редактирование профиля{% endblock %}
 
 {% block stylesheets %}
-    {{ encore_entry_link_tags('documents') }}
+    {{ encore_entry_link_tags('profile') }}
 {% endblock %}
 
 {% block javascripts %}
-    {{ encore_entry_script_tags('documents') }}
+    {{ encore_entry_script_tags('profile') }}
 {% endblock %}
 
 {% block body %}
@@ -19,6 +19,15 @@
                 header: 'Редактирование профиля',
             }
             %}
+            <div class="page-body">
+                <div class="container-xl">
+                    <div class="card">
+                        <div class="card-body">
+                            {{ form(form) }}
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 {% endblock %}

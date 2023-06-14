@@ -25,6 +25,7 @@ Encore
     .addEntry('documents', './assets/documents.js')
     .addEntry('financial', './assets/financial.js')
     .addEntry('manuscript', './assets/manuscript.js')
+    .addEntry('profile', './assets/profile.js')
 
 
     // When enabled, Webpack "splits" your files into smaller pieces for greater optimization.

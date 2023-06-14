@@ -1,0 +1,26 @@
+label.required:after {
+    content: " *";
+    color: #ff0000;
+}
+.form-group {
+    padding: 10px 0;
+}
+
+.top-bl {
+    height: calc(60vh - 60px);
+    overflow: scroll;
+    padding: 15px;
+    box-sizing: border-box;
+    background-color: #ffffff;
+}
+.bottom-bl {
+    height: calc(40vh - 60px);
+    overflow: scroll;
+    padding: 15px;
+    box-sizing: border-box;
+    border-top: 1px solid #cccccc;
+    background-color: #ffffff;
+}
+.table {
+    border: 1px solid #cccccc;
+}
